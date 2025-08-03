@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HULUL Computers Trading - Ajman, UAE</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: pulse 2s infinite;
+      z-index: 1000;
+    }
+
+    .floating-whatsapp:hover {
+      animation: none;
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow-lg p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">HULUL Computers Trading</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#products" class="text-gray-700 hover:text-green-600">Products</a>
+        <a href="#services" class="text-gray-700 hover:text-green-600">Services</a>
+        <a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="text-center p-10 bg-gradient-to-br from-green-50 to-green-100">
+    <h2 class="text-4xl font-bold mb-4">Empowering UAE Businesses with Technology</h2>
+    <span id="typed-text" class="text-xl text-green-700"></span>
+  </section>
+
+  <section id="products" class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-8">Our Products</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h4 class="text-xl font-bold text-green-600">POSX</h4>
+          <p class="mt-2">ERP solution for supermarkets and small businesses, with PDT extension support for inventory and billing.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h4 class="text-xl font-bold text-green-600">RESTPOS</h4>
+          <p class="mt-2">Restaurant POS with admin backend and KOT tablet-based kitchen order system.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h4 class="text-xl font-bold text-green-600">EasyVanSales</h4>
+          <p class="mt-2">Complete online and offline vansales solution for salesmen and distributors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-10 bg-green-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-8">Our Services</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+        <li class="bg-white p-6 rounded-lg shadow">Computer & Hardware Supply for Software Operations</li>
+        <li class="bg-white p-6 rounded-lg shadow">Technical Consultation for Retail and F&B Businesses</li>
+        <li class="bg-white p-6 rounded-lg shadow">Custom Web & Mobile Application Development</li>
+        <li class="bg-white p-6 rounded-lg shadow">Installation & Onsite/Remote Technical Support</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <section id="contact" class="py-10 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Contact Us</h3>
+      <p class="text-lg">Based in Ajman, UAE. Serving all Emirates.</p>
+      <p class="text-md mt-2">Phone: +971-52-8119922 | Email: info@hululcomputers.com  OR sales@hululcomputers.com</p>
+    </div>
+  </section> -->
+  <section id="contact" class="py-10 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Contact Us</h3>
+      <p class="text-lg">Based in Ajman, UAE. Serving all Emirates.</p>
+      <p class="text-md mt-2">
+        Phone: <a href="tel:+971528119922" class="text-green-600 underline">+971-52-8119922</a> |
+        Email: <a href="mailto:info@hululcomputers.com" class="text-green-600 underline">info@hululcomputers.com</a> OR 
+               <a href="mailto:sales@hululcomputers.com" class="text-green-600 underline">sales@hululcomputers.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 HULUL Computers Trading. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/971528119922" target="_blank" class="floating-whatsapp">
+    <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <script>
+    new Typed("#typed-text", {
+      strings: [
+        "POSX - ERP for Supermarkets & Small businesses",
+        "RESTPOS - Restaurant POS + KOT",
+        "EasyVanSales - Online & Offline Van Sales",
+        "Custom Software Development",
+        "Hardware Supply & Consultancy"
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
